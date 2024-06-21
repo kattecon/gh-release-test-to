@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+
+name: More checks
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  checks:
+    name: More checks well
+
+    # Do it on github's own repo, this action is very simple and takes no time
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Nothing really
+        run: echo hello
